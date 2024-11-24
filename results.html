@@ -2,6 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9846768768694534"crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tafuta | Results</title>
@@ -187,10 +188,9 @@
         }
 
         .ads {
-            display: flex;
-            justify-content: space-evenly;
-            padding: 2vh 0;
-            background-color: rgba(0, 0, 0, 0.1);
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(15vw, 1fr)); /* Responsive layout */
+            gap: 1vw; /* Space between ads */
         }
     </style>
 </head>
@@ -232,7 +232,9 @@
                     <a target="_blank" href="https://www.tiktok.com/@officialtafuta"><i class="bi bi-tiktok"></i></a>
                 </div>
             </div>
-            <div class="ads"></div>
+            <div class="ads">
+                <script></script>
+            </div>
         </article>
     </main>
     <script>
@@ -317,6 +319,32 @@
                 }
             }
         });
+
+        // Function to create ad units inside the .ads container
+        function displayAds() {
+            const adContainer = document.querySelector('.ads');
+
+            // AdSense configuration (add 4 ad units)
+            for (let i = 0; i < 4; i++) {
+                const adUnit = document.createElement('ins');
+                adUnit.className = "adsbygoogle";
+                adUnit.style = "display:block";
+                adUnit.setAttribute('data-ad-client', 'ca-pub-9846768768694534'); // Your AdSense client ID
+                adUnit.setAttribute('data-ad-slot', `12345678${i}`); // Unique slot IDs for each ad
+                adUnit.setAttribute('data-ad-format', 'auto'); // Responsive ads
+
+                // Append the ad unit to the container
+                adContainer.appendChild(adUnit);
+
+                // Push the ad for rendering
+                (adsbygoogle = window.adsbygoogle || []).push({});
+            }
+        }
+
+        // Ensure ads are displayed after the script is loaded
+        window.onload = () => {
+            displayAds();
+        };
     </script>
     <noscript>Please enable JavaScript in order to see the page's results.</noscript>
 </body>
