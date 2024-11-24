@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="shortcut icon" href="tafuta_icon.png" type="image/x-icon">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tafuta | Hiring</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            font-family: system-ui;
+        }
+
+        ::-webkit-scrollbar {
+            width: 0.45vw;
+            background-color: gainsboro;
+        }
+
+        ::-webkit-scrollbar-thumb {
+            background: orange;
+        }
+
+        @keyframes fade-in {
+            0% { opacity: 0; }
+            100% { opacity: 1; }
+        }
+
+        html {
+            animation: fade-in 0.5s linear 1;
+        }
+
+        nav {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+            background-color: snow;
+            border-bottom: 0.25vh solid #bbb;
+            z-index: 1;
+            user-select: none;
+        }
+
+        nav img {
+            height: 4vh;
+            padding: 1vw;
+        }
+
+        nav ul li {
+            list-style: none;
+            display: inline;
+            margin: 1vh 0;
+        }
+
+        nav ul li a {
+            color: gray;
+            padding: 0.5vw;
+            margin: 0 0.5vw;
+            text-decoration: none;
+            text-transform: capitalize;
+            font-size: clamp(10px, 1.2vw, 40px);
+            transition: 300ms ease;
+        }
+
+        nav ul li a:hover, nav ul li a:focus {
+            color: dimgray;
+        }
+
+        main {
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+        }
+
+        article {
+            padding: 3.5% 0;
+        }
+
+        .art-2 {
+            display: flex;
+            justify-content: center;
+        }
+
+        .container {
+            width: 60%;
+        }
+
+        .container h1 {
+            margin: 5.5vh 0;
+            font-size: clamp(16px, 3vw, 50px);
+            color: #222;
+            font-weight: 100;
+            text-decoration: underline 0.25vh solid;
+            text-underline-offset: 0.45vh;
+        }
+
+        .division {
+            display: flex;
+        }
+
+        .container h2 {
+            margin: 2.75vh 0;
+            font-size: clamp(12px, 1.45vw, 40px);
+            color: #444;
+            font-weight: 400;
+        }
+
+        .container p {
+            margin: 0.85vh 0;
+            font-size: clamp(9px, 1.1vw, 34px);
+            color: #777;
+        }
+
+        .container ul, .container li {
+            list-style-type: square;
+            margin: 1.25vh 1.65vw;
+            color: #777;
+            font-size: clamp(8px, 1.1vw, 35px);
+        }
+
+        .container hr {
+            margin: 5vh 0;
+        }
+
+        .art-3 {
+            background-color: whitesmoke;
+            padding: 0;
+            position: relative;
+            box-sizing: border-box;
+        }
+
+        .copyright {
+            font-size: clamp(12px, 2vw, 60px);
+            margin: 1vw;
+            color: #888;
+        }
+
+        .copy-bottom {
+            background-color: orange;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0.5vh 0;
+        }
+
+        .policies a {
+            color: snow;
+            margin: 0 1.5vw;
+            font-size: clamp(8px, 1.1vw, 35px);
+            text-transform: capitalize;
+            text-decoration: none;
+        }
+
+        .socials a {
+            color: snow;
+            margin: 0 0.5vw;
+            font-size: clamp(8px, 1.1vw, 35px);
+            text-decoration: none;
+        }
+
+        @media screen and (width <= 425px) {
+            nav {
+                justify-content: space-between;
+            }
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <a href="tafuta.html"><img src="tafuta_logo_text_dark.png" alt="logo"></a>
+        <ul>
+            <li><a href="help.html">help</a></li>
+            <!--li><a href="tos.html">terms of service</a></li-->
+            <li><a href="hiring.html">hiring</a></li>
+        </ul>
+    </nav>
+    <main>
+        <article class="art-1"></article>
+        <article class="art-2">
+            <div class="container">
+                <h1>Hiring</h1>
+
+                <h2>Tafuta Is Hiring</h2>
+                <p>Me as the owner of Tafuta is looking for reliable personnel who can assist within Tafuta's development or customer service.</p>
+                
+                <hr>
+                <div class="division">
+                    <div>
+                        <h2>Minimum Requirements | Customer Service</h2>
+                        <ul>
+                            <li>Bachelor's degree or equivalent practical experience.</li>
+                            <li>Part-time availibility.</li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h2>Minimum Requirements | Developer</h2>
+                        <ul>
+                            <li>Bachelor's degree or equivalent practical experience.</li>
+                            <li>Part-time availibility.</li>
+                            <li>Knowledge of HTML, CSS and JavaScript.</li>
+                        </ul>
+                    </div>
+                </div>
+                <hr>
+                <h2>Contacts</h2>
+                <p>You may reach me via <a href="https://mail.google.com/mail/?view=cm&fs=1&to=therealtydzns@gmail.com&su=Subject%20Here&body=Hello%20therealtydzns!">Gmail</a> or <a href="https://discord.com/users/704172704994951228/">Discord</a>.</p>
+                <p>I check both of these medias regularly on a daily basis, so you'll be notified quite quickly.</p>
+            </div>
+        </article>
+        <article class="art-3">
+            <header class="copyright">&copy; 2024 - <script>const webDate = new Date(); document.write(webDate.getUTCFullYear());</script> Tafuta</header>
+            <div class="copy-bottom">
+                <div class="policies">
+                    <a href="help.html">help</a>
+                    <!--a href="tos.html">terms of service</a-->
+                    <a href="hiring.html">hiring</a>
+                </div>
+                <div class="socials">
+                    <a target="_blank" href="https://www.youtube.com/channel/UCXp9EU47nYP8Ws-DDFEFj-g"><i class="bi bi-youtube"></i></a>
+                    <a target="_blank" href="https://x.com/officialtafuta"><i class="bi bi-twitter"></i></a>
+                    <a target="_blank" href="https://www.tiktok.com/@officialtafuta"><i class="bi bi-tiktok"></i></a>
+                </div>
+            </div>
+        </article>
+    </main>
+</body>
+</html>
